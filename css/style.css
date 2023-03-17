@@ -127,3 +127,33 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
+
+ /* tablet: dai 768px in giù
+mobile: dai 480px in giù */
+
+/* MOBILE */
+@media screen and (max-width: 480px) {
+    /* body{
+        background-color: crimson;
+    } */
+
+    .row{
+        flex-direction: column;
+    }
+
+    .col{
+        width: 100% !important;
+        margin-top: 3.5em;
+    }
+
+    .col:first-child{
+        margin-top: 0;
+    }   
+}
+
+/* BONUS: TOLGO SCROLLBAR */
+@media screen and (max-width: 1160px) {
+    .container{
+        width: 98%;
+    }
+}
